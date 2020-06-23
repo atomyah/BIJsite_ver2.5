@@ -1,5 +1,4 @@
-// import { Link } from "gatsby"
-// import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import React from "react"
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,6 +35,13 @@ const Footer = () => (
               <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">@benzoinfojapan</a>　☜お問い合わせはツイッターへ
               </div>
           </Nav>
+      </Navbar>
+      <Navbar>
+        <Nav className="ml-auto">
+          <div className="box">
+            <Link to="/privacypolicy">プライバシーポリシー</Link>
+          </div>
+        </Nav>
       </Navbar>
       <Navbar>      
           <Nav className="ml-auto">

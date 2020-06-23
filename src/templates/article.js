@@ -100,7 +100,7 @@ const Articlearticle = props => {
      <br /><br />
      <FontAwesomeIcon icon={faEdit} /><span style={{color:`#5a818c`}}>ご自由にコメントをお書きください。管理人の承認作業はありません。</span>
      {/*<DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />*/}
-     <FacebookProvider appId="712789275930386" language="ja_JP" children={slug}>
+     <FacebookProvider appId="712789275930386" language="ja_JP">
         <Comments href="http://benzoinfojapan.org" width="100%" />
       </FacebookProvider>
      </Container>
