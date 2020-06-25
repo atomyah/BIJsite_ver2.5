@@ -34,7 +34,7 @@ const ProfilePage = () => (
         <div>
         <ListGroup horizontal>
             <Link to="/patients-article/8"><ListGroup.Item>管理人のベンゾ減薬記録</ListGroup.Item></Link>
-            <ListGroup.Item>管理人の離脱症状詳細（準備中）</ListGroup.Item>
+            <Link to="/medias-article/11"><ListGroup.Item>管理人の離脱症状詳細</ListGroup.Item></Link>
         </ListGroup>
         </div>
         <p></p>

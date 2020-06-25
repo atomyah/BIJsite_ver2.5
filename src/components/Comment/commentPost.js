@@ -14,7 +14,7 @@ const CommentPost = () => {
 
     const [name, setName] = useState("")
     const [type, setType] = useState("")
-    const [comment, setComment] = useState("")
+    const [body, setBody] = useState("")
 
 const onSubmit = e => { // eはevent
     /* 
@@ -27,12 +27,12 @@ const onSubmit = e => { // eはevent
         .add({
             name: name,
             type: type,
-            comment: comment,
+            body: body,
             slug: slug,
             created: firebase.firestore.Timestamp.fromDate(new Date())
         })
         //.then でフォームクリア
-        .then(() => setName(""), setType(""), setComment(''))
+        .then(() => setName(""), setType(""), setBody(''))
 }
 
     return (
@@ -55,9 +55,9 @@ const onSubmit = e => { // eはevent
         </Form.Group>
         <Form.Group>
         <Form.Control as="textarea" rows="3" placeholder="コメント"
-          value={comment}
-          name="comment"
-          onChange={e => setComment(e.currentTarget.value)}
+          value={body}
+          name="body"
+          onChange={e => setBody(e.currentTarget.value)}
           type=""
         />
         </Form.Group>

@@ -27,11 +27,17 @@ const IndexPage = () => (
             <Col>
               <h2 className={Style.h2Size}>新着・更新情報</h2>
               <div>
+                <Link to="/medias-article/11" alt="管理人の経験したベンゾ離脱症状">
+                  メディア向け記事「管理人の経験したベンゾ離脱症状詳細【閲覧注意】」を追加しました
+                </Link>
+                <Badge variant="danger">新</Badge>
+                {/* <Badge variant="info">更</Badge> */}
+              </div>
+              <div>
                 <Link to="/doctotrs-article/21" alt="ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート">
                   医師向け記事「ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート」を追加しました
                 </Link>
                 <Badge variant="danger">新</Badge>
-                {/* <Badge variant="info">更</Badge> */}
               </div>
               <div>
                 サイト内検索機能を追加しました
