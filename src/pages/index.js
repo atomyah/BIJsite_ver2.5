@@ -9,7 +9,7 @@ import { Container, Row, Col, Badge, Accordion, Card, Button } from 'react-boots
 import Style from './index.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVideo} from '@fortawesome/free-solid-svg-icons'
+import { faVideo } from '@fortawesome/free-solid-svg-icons'
 
 
 const IndexPage = () => (
@@ -27,11 +27,23 @@ const IndexPage = () => (
             <Col>
               <h2 className={Style.h2Size}>新着・更新情報</h2>
               <div>
+                <Link to="/contact" alt="お問い合わせフォーム">
+                  お問い合わせフォームを作成しました
+                </Link>
+                <Badge variant="danger">新</Badge>
+              </div>
+              <div>
+                <Link to="/medias-article/12" alt="My Benzodiazepine Withdrawal Symptoms">
+                  Added article for medias「My Benzodiazepine Withdrawal Symptoms (NSFW)」
+                </Link>
+                <Badge variant="danger">新</Badge>
+                {/* <Badge variant="info">更</Badge> */}
+              </div>
+              <div>
                 <Link to="/medias-article/11" alt="管理人の経験したベンゾ離脱症状">
                   メディア向け記事「管理人の経験したベンゾ離脱症状詳細【閲覧注意】」を追加しました
                 </Link>
                 <Badge variant="danger">新</Badge>
-                {/* <Badge variant="info">更</Badge> */}
               </div>
               <div>
                 <Link to="/doctotrs-article/21" alt="ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート">
@@ -39,17 +51,13 @@ const IndexPage = () => (
                 </Link>
                 <Badge variant="danger">新</Badge>
               </div>
-              <div>
-                サイト内検索機能を追加しました
-                <Badge variant="danger">新</Badge>
-              </div>
-              <div>
+              {/*<div>
                 <Link to="/patients-article/8" alt="ベンゾ減薬記録">
                   患者向け記事「管理人のベンゾ減薬記録」を更新しました
                 </Link>
                 <Badge variant="info">更</Badge>
-                {/* <Badge variant="danger">新</Badge> */}
               </div>
+              */}
             
             </Col>
           </Row>

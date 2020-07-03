@@ -36,7 +36,7 @@ const onSubmit = e => { // eはevent
 }
 
     return (
-      <form form className="comment-form" onSubmit={onSubmit}>
+      <form className="comment-form" onSubmit={onSubmit}>
         <Form.Group>
             <Form.Control placeholder="お名前"
             value={name}

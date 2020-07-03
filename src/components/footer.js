@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-solid-svg-icons'
 
 import Twitter_Logo_Blue from '../images/Twitter_Logo_Blue.svg'
-
+import Facebook_Logo from '../images/icons8-facebook.svg'
 
 const Footer = () => (
     <>
@@ -31,10 +31,20 @@ const Footer = () => (
             </div>
             */}
               <div className="box">
-            　<img src={Twitter_Logo_Blue} width={30} alt={'Twitter'} />
-              <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">@benzoinfojapan</a>　☜お問い合わせはツイッターへ
+            　<img src={Twitter_Logo_Blue} width={28} alt={'Twitter'} />
+              <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">@Twitter</a>
+              　
+              <img src={Facebook_Logo} width={22} alt={'Facebook'} />
+              <a href="https://www.facebook.com/benzoinfo" target="_blank" rel="noreferrer noopener">facebook</a>
               </div>
           </Nav>
+      </Navbar>
+      <Navbar>
+        <Nav className="ml-auto">
+          <div className="box">
+            <Link to="/contact">お問い合わせフォーム</Link>
+          </div>
+        </Nav>
       </Navbar>
       <Navbar>
         <Nav className="ml-auto">
