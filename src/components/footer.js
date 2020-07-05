@@ -42,7 +42,7 @@ const Footer = () => (
       <Navbar>
         <Nav className="ml-auto">
           <div className="box">
-            <Link to="/contact">お問い合わせフォーム</Link>
+            <Link to="/contact">お問い合わせフォーム（Cotact Form）</Link>
           </div>
         </Nav>
       </Navbar>

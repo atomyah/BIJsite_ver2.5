@@ -12,8 +12,11 @@ const Contact = () => (
       <SEO title="お問い合わせ" />
       <Container fluid="md">
       <h1 style={{fontSize:`1.2rem`}}>お問い合わせ（Contact Form）</h1>
+      <p style={{color:`gray`}}>
+        減薬やベンゾ一般情報に関するご質問は「<a href="http://benzofaq.com/" target="_blank" rel="noreferrer noopener">質問フォーラム</a>」にてご投稿をお願いします。
+      </p>
         <form method="post" action="https://www.flexyform.com/f/b24ef2cdc047c100434968d3e8fede06be48e6bd">
-            <Form.Control type="text" as="input" placeholder="お名前（Name）" name="name" required />
+            <Form.Control type="text" as="input" placeholder="お名前（Name）※仮名でも構いません" name="name" required />
             <br />
             <Form.Control type="email" as="input" placeholder="メールアドレス（Email address）" name="email" required />
             <br />
