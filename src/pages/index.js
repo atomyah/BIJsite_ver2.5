@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVideo } from '@fortawesome/free-solid-svg-icons'
 
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="ベンゾジアゼピン情報センター トップページ"
         description="睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こします" 
@@ -25,40 +25,51 @@ const IndexPage = () => (
         <Col md={6}>
           <Row>
             <Col>
-              <h2 className={Style.h2Size}>新着・更新情報</h2>
-              <div>
-                <Link to="/contact" alt="お問い合わせフォーム">
-                  お問い合わせフォームを作成しました
-                </Link>
-                <Badge variant="danger">新</Badge>
-              </div>
-              <div>
-                <Link to="/medias-article/12" alt="My Benzodiazepine Withdrawal Symptoms">
-                  Added article for medias「My Benzodiazepine Withdrawal Symptoms (NSFW)」
-                </Link>
-                <Badge variant="danger">新</Badge>
-                {/* <Badge variant="info">更</Badge> */}
-              </div>
-              <div>
-                <Link to="/medias-article/11" alt="管理人の経験したベンゾ離脱症状">
-                  メディア向け記事「管理人の経験したベンゾ離脱症状詳細【閲覧注意】」を追加しました
-                </Link>
-                <Badge variant="danger">新</Badge>
-              </div>
-              <div>
-                <Link to="/doctotrs-article/21" alt="ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート">
-                  医師向け記事「ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート」を追加しました
-                </Link>
-                <Badge variant="danger">新</Badge>
-              </div>
-              {/*<div>
-                <Link to="/patients-article/8" alt="ベンゾ減薬記録">
-                  患者向け記事「管理人のベンゾ減薬記録」を更新しました
-                </Link>
-                <Badge variant="info">更</Badge>
-              </div>
-              */}
-            
+              <h2 className={Style.h2Size}>新着情報</h2>
+              {data.allMicrocmsArticles.edges.map(edge => {
+                const articles = edge.node
+                const category = edge.node.category[0].name
+
+                  return (
+                    <React.Fragment key={articles.id}>
+                      <div>
+                        <Link to={`/${category}-article/${articles.num}`} alt={articles.title}>
+                          {articles.title}
+                        </Link>
+                          を作成しました
+                        <Badge variant="danger">新</Badge>
+                      </div>
+                      <div>
+                        {/* <Badge variant="info">更</Badge> */}
+                      </div>
+                    </React.Fragment>
+                    )
+                  }
+                )
+              }
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <h2 className={Style.h2Size}>更新情報</h2>
+                  <div>
+                    <Link to="/patients-article/8" alt="管理人のベンゾ減薬記録">
+                      管理人のベンゾ減薬記録
+                    </Link>
+                      を更新しました
+                    <Badge variant="info">更</Badge>
+                  </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+                  <div>
+                    <Link to="/patients-article/11" alt="推奨ブログ・サイト・Youtube">
+                    推奨ブログ・サイト・Youtube
+                    </Link>
+                      を更新しました
+                    <Badge variant="info">更</Badge>
+                  </div>
             </Col>
           </Row>
           <Row>
@@ -175,5 +186,27 @@ const IndexPage = () => (
     <div className={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
 )
+
+
+export const query = graphql`
+ {
+    allMicrocmsArticles(
+      limit: 4, sort: {order: DESC, fields: createdAt}
+   ) {
+     edges {
+       node {
+         createdAt
+         id
+         num
+         title
+         category {
+          id
+          name
+        }
+       }
+     }
+   }
+ }
+`
 
 export default IndexPage
