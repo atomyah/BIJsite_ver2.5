@@ -53,19 +53,8 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
                   <div>
-                    <Link to="/patients-article/8" alt="管理人のベンゾ減薬記録">
-                      管理人のベンゾ減薬記録
-                    </Link>
-                      を更新しました
-                    <Badge variant="info">更</Badge>
-                  </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-                  <div>
-                    <Link to="/patients-article/11" alt="推奨ブログ・サイト・Youtube">
-                    推奨ブログ・サイト・Youtube
+                    <Link to="/profile" alt="管理人プロフィール">
+                      管理人プロフィール
                     </Link>
                       を更新しました
                     <Badge variant="info">更</Badge>

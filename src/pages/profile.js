@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
-import ProfileImg from "../images/profile_200x170.png"
+import ProfileImg01 from "../images/profile_200x170.png"
+import ProfileImg02 from "../images/profile_02.png"
 
 import { Container, Image, ListGroup, Figure } from 'react-bootstrap'
 import Style from './profile.module.css'
@@ -38,13 +39,24 @@ const ProfilePage = () => (
         </ListGroup>
         </div>
         <p></p>
-        <Figure style={{margin:`auto`}}>
+        <Figure style={{margin:`auto`, padding:`10px`}}>
             <Figure.Image
             width={200}
-            src={ProfileImg} roundedCircle 
+            src={ProfileImg01} roundedCircle 
             /> 
             <Figure.Caption>
-                2020年5月10日撮影
+                2020年5月10日撮影。5月の初夏のもと暑さがこたえる、まだまだ倦怠感あり。
+                週に1日～2日程度は一日中横にならざるをえない。
+            </Figure.Caption>
+        </Figure>
+        <Figure style={{margin:`auto`, padding:`10px`}}>
+            <Figure.Image
+            width={200}
+            src={ProfileImg02} roundedCircle 
+            /> 
+            <Figure.Caption>
+                2020年7月16日撮影。1日横になる日はなくなった。
+                睡眠補助剤（ミルタザピン3~4mg）を摂らなくても寝れるようになってくる。
             </Figure.Caption>
         </Figure>
         

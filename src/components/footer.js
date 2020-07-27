@@ -18,45 +18,49 @@ const Footer = () => (
     }
     .box img {
       _vertical-align: middle; /* 画像を垂直に */
+    }
+    /* ------------------------------------------------ */
+    /* 7.フッターナビゲーション
+    /* ------------------------------------------------ */
+  
+    /* メニューを縦並びにする */
+    #fNav ul {
+      display: block;
+      width: 90%;
+    }
+  
+    /* 各メニュー要素の装飾 */
+    #fNav li {
+      background-color: #ffffff;
+      margin-bottom: 1px;
+      border-right: none;
+      position: relative;
+      padding: 0;
+    }
+  
+    /* 各メニューのリンク領域を枠いっぱいに広げて上下中央寄せ */
+    #fNav a {
+      color: #2AA8E5;
+      display: block;
+      padding: 10px;
+    }
     `}
     </style>
   <footer className="bg-snow">
     <Container style={{ paddingTop: `1.2rem`, paddingBottom: `0rem` }}>
-      <Navbar expand="md">
-          <Nav className="ml-auto">
-            {/* ロードが遅くなるのでフォローボタンの埋め込みはやめた
-            <div className="twitter">
-　              <a href="https://twitter.com/benzoinfojapan?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="true" data-lang="ja"></a>
-                {<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>}
-            </div>
-            */}
-              <div className="box">
-            　<img src={Twitter_Logo_Blue} width={28} alt={'Twitter'} />
-              <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">@Twitter</a>
-              　
-              <img src={Facebook_Logo} width={22} alt={'Facebook'} />
+      <Navbar expand="md" id="fNav">
+        <ul>
+          <li>
+              <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">Twitter</a>
+          </li>
+          <li>      
               <a href="https://www.facebook.com/benzoinfo" target="_blank" rel="noreferrer noopener">facebook</a>
-              </div>
-          </Nav>
-      </Navbar>
-      <Navbar>
-        <Nav className="ml-auto">
-          <div className="box">
-            <Link to="/contact">お問い合わせフォーム（Cotact Form）</Link>
-          </div>
-        </Nav>
-      </Navbar>
-      <Navbar>
-        <Nav className="ml-auto">
-          <div className="box">
-            <Link to="/privacypolicy">プライバシーポリシー</Link>
-          </div>
-        </Nav>
-      </Navbar>
-      <Navbar>      
-          <Nav className="ml-auto">
-                © {new Date().getFullYear()}, ベンゾジアゼピン情報センター 
-          </Nav>
+          </li>
+          <li><Link to="/contact">お問い合わせフォーム（Cotact Form）</Link></li>
+          <li><Link to="/privacypolicy">プライバシーポリシー</Link></li>
+          <li><Link to="/profile">管理人プロフィール</Link></li>
+          © {new Date().getFullYear()}, ベンゾジアゼピン情報センター
+        </ul>
       </Navbar>
     </Container>
   </footer>
