@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-solid-svg-icons'
 
 import Twitter_Logo_Blue from '../images/Twitter_Logo_Blue.svg'
-import Facebook_Logo from '../images/icons8-facebook.svg'
+import Facebook_Logo from '../images/facebook-6.svg'
 
 const Footer = () => (
     <>
@@ -16,51 +16,52 @@ const Footer = () => (
       color: black;
       padding: 20;
     }
+    .box {
+      padding-right: 5px;
+    }
     .box img {
       _vertical-align: middle; /* 画像を垂直に */
     }
-    /* ------------------------------------------------ */
-    /* 7.フッターナビゲーション
-    /* ------------------------------------------------ */
-  
-    /* メニューを縦並びにする */
-    #fNav ul {
-      display: block;
-      width: 90%;
-    }
-  
-    /* 各メニュー要素の装飾 */
-    #fNav li {
-      background-color: #ffffff;
-      margin-bottom: 1px;
-      border-right: none;
-      position: relative;
-      padding: 0;
-    }
-  
-    /* 各メニューのリンク領域を枠いっぱいに広げて上下中央寄せ */
-    #fNav a {
-      color: #2AA8E5;
-      display: block;
-      padding: 10px;
+    .nav-item.nav-link {
+      background-color: aqua;
     }
     `}
     </style>
   <footer className="bg-snow">
     <Container style={{ paddingTop: `1.2rem`, paddingBottom: `0rem` }}>
-      <Navbar expand="md" id="fNav">
-        <ul>
-          <li>
-              <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">Twitter</a>
-          </li>
-          <li>      
-              <a href="https://www.facebook.com/benzoinfo" target="_blank" rel="noreferrer noopener">facebook</a>
-          </li>
-          <li><Link to="/contact">お問い合わせフォーム（Cotact Form）</Link></li>
-          <li><Link to="/privacypolicy">プライバシーポリシー</Link></li>
-          <li><Link to="/profile">管理人プロフィール</Link></li>
-          © {new Date().getFullYear()}, ベンゾジアゼピン情報センター
-        </ul>
+      <Navbar expand="md">
+        <Nav>
+            <Nav.Item>
+              <div className="box">
+                <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">
+                  Twitter
+                  <img src={Twitter_Logo_Blue} width={28} alt={'Twitter'} />
+                </a>
+                {`　`}
+              </div>
+            </Nav.Item>
+            <Nav.Item>
+              <div className="box">
+                <a href="https://www.facebook.com/benzoinfo" target="_blank" rel="noreferrer noopener">
+                  Facebook{` `}
+                  <img src={Facebook_Logo} width={14} alt={'Facebook'} />          
+                </a>
+                {`　`}          
+              </div>
+            </Nav.Item>
+            <Nav.Item>
+                <Link to="/contact">お問い合わせ（Contact）</Link>
+                {`　`} 
+            </Nav.Item>
+            <Nav.Item>
+                <Link to="/privacypolicy">プライバシーポリシー</Link>
+            </Nav.Item>
+        </Nav>
+      </Navbar>
+      <Navbar>
+          <Nav className="ml-auto">
+                © {new Date().getFullYear()}, ベンゾジアゼピン情報センター 
+          </Nav>
       </Navbar>
     </Container>
   </footer>
