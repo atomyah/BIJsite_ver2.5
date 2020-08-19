@@ -20,7 +20,7 @@ const BasicsPage = () => (
             <SEO title="ベンゾジアゼピン一般情報" />
             <h1 style={{ fontSize: '1.25rem'}}>ベンゾジアゼピン一般情報</h1>
             <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/introduction"><Card.Img variant="top" src={introductionImg} /></Link>
                                 <Card.Title>ベンゾジアゼピン概要</Card.Title>
@@ -32,7 +32,7 @@ const BasicsPage = () => (
                             </Card.Body>
                         </Card>
 
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/introductioneng"><Card.Img variant="top" src={introductionEngImg} /></Link>
                                 <Card.Title>summary of benzodiazepine</Card.Title>
@@ -44,7 +44,7 @@ const BasicsPage = () => (
                             </Card.Body>
                         </Card>
 
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/basics/benzohistory"><Card.Img variant="top" src={historyImg} /></Link>
                                 <Card.Title>ベンゾジアゼピンの歴史</Card.Title>
@@ -56,7 +56,7 @@ const BasicsPage = () => (
                             </Card.Body>
                         </Card>
 
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/basics/benzowords"><Card.Img variant="top" src={wordsImg} /></Link>
                                 <Card.Title>ベンゾジアゼピン用語集</Card.Title>
@@ -67,7 +67,7 @@ const BasicsPage = () => (
                                 <Link to="/basics/benzowords">続きを読む</Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/basics/withdrawalsymptoms"><Card.Img variant="top" src={symptomsImg} /></Link>
                                 <Card.Title>ベンゾジアゼピン離脱症状一覧（Withdrawal symptoms）</Card.Title>
@@ -78,7 +78,7 @@ const BasicsPage = () => (
                                 <Link to="/basics/withdrawalsymptoms">続きを読む</Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/basics/benzolist"><Card.Img variant="top" src={benzolistImg} /></Link>
                                 <Card.Title>ジアゼパム換算表</Card.Title>
@@ -89,7 +89,7 @@ const BasicsPage = () => (
                                 <Link to="/basics/benzolist">続きを読む</Link>
                             </Card.Body>
                         </Card>
-                        <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                        <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
                             <Card.Body>
                             <Link to="/basics/benzolisteng"><Card.Img variant="top" src={benzolistengImg} /></Link>
                                 <Card.Title>Benzodiazepines List and Equivalents</Card.Title>

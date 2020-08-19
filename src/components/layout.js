@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Search from './Search'
 
+import Navbar from "./Navbar/Navbar"
+
 
 const Layout = ({ children }) => {
 
@@ -35,7 +37,7 @@ const Layout = ({ children }) => {
     `}
     </style>
 
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={data.site.siteMetadata.title} />
       <Search />
       <div
         style={{

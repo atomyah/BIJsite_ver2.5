@@ -3,14 +3,20 @@ import { graphql, Link　} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Card } from 'react-bootstrap'
+import { Container, Card, CardDeck } from 'react-bootstrap'
 
 const PatientsPage = ({ data }) => (
+  <>
+  <style type="text/html">
+    {`
+    `}
+  </style>
+
  <Layout>
-   <Container fluid="md">
+   <Container>
     <SEO title="医師の方へ" />
     <h1 style={{ fontSize: '1.25rem'}}>医師の方へ</h1>
-    <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+    <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap',justifyContent: 'center'}}>
 
         {data.allMicrocmsArticles.edges.map(edge => {
           const articles = edge.node
@@ -23,10 +29,11 @@ const PatientsPage = ({ data }) => (
 
           //if (category === 'doctors') {      //カテゴリーが医師用の場合表示
             return (
-              <React.Fragment key={articles.id}>
-                <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+                <Card key={articles.id} style={{marginLeft: `2rem`, width: '24rem', fontSize: '0.9rem' }}>
                   <Card.Body>
-                    <Link to={`/doctors-article/${articles.num}`}><Card.Img variant="top" src={articles.pict.url} /></Link>
+                    <Link to={`/doctors-article/${articles.num}`}>
+                      <Card.Img variant="top" src={articles.pict.url} />
+                    </Link>
                     <Card.Title>{articles.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{articles.date}</Card.Subtitle>
                     <Card.Text>
@@ -35,14 +42,13 @@ const PatientsPage = ({ data }) => (
                     <Link to={`/doctors-article/${articles.num}`}>続きを読む</Link>
                   </Card.Body>
                 </Card>
-            </React.Fragment>
             )
           }
-//        }
         )}
     </div>
    </Container>
  </Layout>
+ </>
 )
 
 export const query = graphql`

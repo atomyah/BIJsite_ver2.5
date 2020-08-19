@@ -1100,13 +1100,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2":
-  version "7.10.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
-  integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/runtime@^7.10.3":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.4.tgz#a6724f1a6b8d2f6ea5236dbfe58c7d7ea9c5eb99"
@@ -3094,10 +3087,20 @@ babel-plugin-remove-graphql-queries@^2.8.2:
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.8.2.tgz#a2968ea62e2e39ceaabf95157d915dfee77ee36e"
   integrity sha512-zzsJdkeE4zoozow1NECllMYed5yQGVSLt532kWec7G4mWCzZaFTz/E5TM4c3/RbBs32qyFkXi7ahRsB2DbW3hQ==
 
-"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.7:
+"babel-plugin-styled-components@>= 1":
   version "1.10.7"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.7.tgz#3494e77914e9989b33cc2d7b3b29527a949d635c"
   integrity sha512-MBMHGcIA22996n9hZRf/UJLVVgkEOITuR2SvjHLb5dSTUyR4ZRGn+ngITapes36FI3WLxZHfRhkA1ffHxihOrg==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    "@babel/helper-module-imports" "^7.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    lodash "^4.17.11"
+
+babel-plugin-styled-components@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.11.1.tgz#5296a9e557d736c3186be079fff27c6665d63d76"
+  integrity sha512-YwrInHyKUk1PU3avIRdiLyCpM++18Rs1NgyMXEAQC33rIXs/vro0A+stf4sT0Gf22Got+xRWB8Cm0tw+qkRzBA==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.0.0"
     "@babel/helper-module-imports" "^7.0.0"
@@ -6951,12 +6954,12 @@ gatsby-plugin-sitemap@^2.4.2:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-styled-components@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.3.tgz#c6c50cc9d07fa72118889dae08154355fdd4ed12"
-  integrity sha512-6iGOX5dOrcD7lrfCJchaA1wSp9VXzH7QYYBkIx4a2vQ/Xf35lDd0uyer/guNHMYoJ+6nBX80+Je4tZWuUnih6A==
+gatsby-plugin-styled-components@^3.3.10:
+  version "3.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.10.tgz#d325535023695382cf0f209382e5e0cc4658e6e6"
+  integrity sha512-2yV3hanEPelf8IwkOa1Sk4RtHh4tuuvdJs2NCnAsHxYEMLlFC4UeG91z4Q4t69G7RvZ2W8PzdByLK5N5C97CQQ==
   dependencies:
-    "@babel/runtime" "^7.10.2"
+    "@babel/runtime" "^7.10.3"
 
 gatsby-plugin-twitter@^2.2.4:
   version "2.2.4"

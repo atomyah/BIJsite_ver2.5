@@ -25,7 +25,7 @@ const PatientsPage = ({ data }) => (
         return (
           <React.Fragment key={articles.id}>
           
-            <Card style={{  width: '18rem', fontSize: '0.9rem' }}>
+            <Card style={{marginLeft: `2rem`,  width: '24rem', fontSize: '0.9rem' }}>
               <Card.Body>
                 <Link to={`/patients-article/${articles.num}`}><Card.Img variant="top" src={articles.pict.url} /></Link>
                 <Card.Title>{articles.title}</Card.Title>
@@ -40,7 +40,6 @@ const PatientsPage = ({ data }) => (
         </React.Fragment>
         )
       }
-//    }
     )}
     </div>
    </Container>
