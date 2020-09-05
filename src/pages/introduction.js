@@ -104,7 +104,8 @@ const IntroductionPage = () => (
         手術前や救急などに使用されることはよくあります。しかし、長期連用すると少量であっても"処方用量内依存"といってやめるのが非常に難しくなります
         （精神依存ではなく身体依存です。英語ではdependencyといい薬物中毒やアルコール依存のaddictionやabuseとは異質なものです）。精神的な渇望はまったくなく（例外あり）やめたくとも強烈な数々の離脱症状が襲いやめられないのです。<br />
       仮に一気断薬もしくは短期間の減薬をすると<font color="crimson">「生き地獄」「拷問」</font>といってもいい離脱症状に何年も苦しむことになります。 
-      どのくらいの辛さか。寝たきりになれるのがうらやましいと思うくらいです。これは依存症などといったものではなくあきらかに<span className={Style.fontCrimson}>「薬剤性神経システム傷害</span>」（<span className={Style.fontCrimson}>Injury</span>)です。こちらの<Link to="doctors-article/3" target="blank" rel="noreferrer noopener">自死被害者の訴え</Link>をご覧ください。
+      どのくらいの辛さか。寝たきりになれるのがうらやましいと思うくらいです(参考：<Link to="medias-article/11" target="blank" rel="noreferrer noopener">管理人の経験したベンゾ離脱症状</Link>）。
+      これは依存症などといったものではなくあきらかに<span className={Style.fontCrimson}>「薬剤性神経システム傷害</span>」（<span className={Style.fontCrimson}>Injury</span>)です。こちらの<Link to="doctors-article/3" target="blank" rel="noreferrer noopener">自死被害者の訴え</Link>をご覧ください。
       </p>
       それゆえベンゾからの離脱は覚せい剤、ヘロインといった麻薬よりもはるかに難しいものになります。
       服薬量を少しづつ減らしながら壊された神経システムの回復を年単位で待つより他に方法はありません。
@@ -126,7 +127,7 @@ const IntroductionPage = () => (
         <li>頻尿で泌尿器科にて処方、</li>
         <li>胃痛で神経内科にて処方、</li>
         <li>顎関節症で歯科で処方、</li>
-        <li>術後の不眠や不定愁訴に対し外科、産婦人科、肛門科で処方</li>
+        <li>手術後の不眠や不定愁訴に対し外科、産婦人科、肛門科で処方、</li>
         <li>ドライアイ症候群で眼科で処方</li>
       </ul>
       </Jumbotron>

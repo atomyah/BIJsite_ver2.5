@@ -53,10 +53,17 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
                   <div>
-                    <Link to="/profile" alt="管理人プロフィール">
-                      管理人プロフィール
+                    <Link to="/patients-article/8" alt="管理人のベンゾ減薬記録">
+                    管理人のベンゾ減薬記録
                     </Link>
                       を更新しました
+                    <Badge variant="info">更</Badge>
+                  </div>
+                  <div>
+                    <Link to="/patients-article/10" alt="My taper log and history">
+                    My taper log and history
+                    </Link>
+                    {` `}is updated
                     <Badge variant="info">更</Badge>
                   </div>
             </Col>
@@ -82,10 +89,22 @@ const IndexPage = ({ data }) => (
                 <br />
                 <span className={Style.fontSmall}>This Is Life with Lisa Ling 2019年10月6日放映</span>
                 <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
+                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>   
                 <br />
-                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>      
+                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター 管理人</a></span>
+              </div>
+              <br />
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/8W0HNqhf1LI" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン『医療災害』</a>
                 <br />
-                字幕：<a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター 管理人</a></span>
+                <span className={Style.fontSmall}>The Benzodiazepine Medical Disaster 2017年1月放映</span>
+                <a href="https://youtu.be/8W0HNqhf1LI" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener"><Image filename="home_03.jpg" alt="ベンゾジアゼピン『医療災害』" /></a>
+                <span className={Style.fontSmall}>
+                出典：アイルランド放送協会 RTE 1 TV
+                <br />
+                字幕・翻訳：金澤眞智子
+                </span>             
               </div>
             </Col>
           </Row>
@@ -109,7 +128,8 @@ const IndexPage = ({ data }) => (
             <h2 className={Style.h2Size}>はじめに</h2>
               睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こします。日本だけでなく世界中で蔓延処方され約10人にひとりが服用し
             <Link to="/doctors-article/11" alt="Treatment of Benzodiazepine Dependence" target="_blank" rel="noreferrer noopener">1ヶ月連用で約半数が傷害形成されます</Link>（何年服用していても問題ない人も多くいます）。短期間の減薬では離脱症状が拷問と言っていいほどの苦痛で
-            最悪自死に至ります。離脱症状がまったく無いかもしくは軽度で簡単にやめられる方もたくさんいます。しかし、運悪くご自分がそうでない場合は必ず、<br />
+            最悪自死に至ります。離脱症状がまったく無いかもしくは軽度で簡単にやめられる方はたくさんいます。しかし、それを前もって知る方法はありません。
+            運悪くご自分がそうでない場合は必ず、<br />
             <br />１．<Link to="/patients-article/8">減薬は数年</Link>かけてください！
             <br />２．服薬中でも不安になる必要はまったくありません。いきなりやめないように！<br /> 
             <br /> アルコール依存症や薬物依存とは同じ“依存”という言葉を使用するもののそれらとは異質なものです。

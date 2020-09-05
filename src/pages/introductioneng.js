@@ -129,9 +129,11 @@ const IntroductionPage = () => (
         There is no mental craving. If you want to quit, you can't due to a number of intense withdrawal symptoms.
         If you cold-turkey it or reduce with rapid tapering, 
         you will suffer from withdrawal symptoms that can be called “living hell” or “torture beyond human belief” for years. 
-        For example, this is how horrified it is;
-        <a target="blank" rel="noreferrer noopener" href="https://www.benzoinfo.com/2018/04/13/christines-story-ativan-withdrawal-akathisia-and-suicide/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=latest_from_benzodiazepine_information_coalition&amp;utm_term=2018-04-23">CHRISTINE’S STORY: ATIVAN, WITHDRAWAL, AKATHISIA AND SUICIDE</a>. 
-        This is clearly not “addiction” but “central nervous system injury” . 
+        For example, this is how horrified it is; 
+        <Link to="medias-article/12"> "My Benzodiazepine Withdrawal Symptoms"</Link>, or 
+        <a target="blank" rel="noreferrer noopener" href="https://www.benzoinfo.com/2018/04/13/christines-story-ativan-withdrawal-akathisia-and-suicide/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=latest_from_benzodiazepine_information_coalition&amp;utm_term=2018-04-23"> "CHRISTINE’S STORY: ATIVAN, WITHDRAWAL, AKATHISIA AND SUICIDE"</a>, 
+        .  
+        This is clearly not “addiction” but “central nervous system injury”. 
         See this <Link to="/doctors-article/3" target="blank" rel="noreferrer noopener">message</Link> of a woman who ended her life.</p>
       <p></p>
       <p>Therefore, withdrawal from benzo is much more difficult than narcotics such as LSD and heroin. 
