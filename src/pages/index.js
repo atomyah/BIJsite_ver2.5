@@ -83,6 +83,17 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>動画紹介</h2>
               <div>
+                <Badge variant="danger">新</Badge>
+                {` `}
+                <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/7ul9kCDTUCw" alt="ジョーダン・ピーターソン" target="_blank" rel="noreferrer noopener">臨床心理学者ジョーダン・ピーターソン：自身のベンゾジアゼピン離脱を語る 8分</a>
+                <br />
+                <span className={Style.fontSmall}>出典：<a href="https://youtu.be/HLWgVpmo1e0" target="_blank" rel="noreferrer noopener">The Mikhaila Peterson Podcast #9</a>   
+                <br />
+                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
+              </div>
+              <br />
+              <div>
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （前半）22分</a>
                 <br />
