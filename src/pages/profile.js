@@ -14,7 +14,11 @@ import Style from './profile.module.css'
 const ProfilePage = () => (
 
     <Layout>
-      <SEO title="ベンゾジアゼピン情報センター" />
+      <SEO title="ベンゾジアゼピン情報センター プロフィール"
+            description="減薬を進めながらベンゾジアゼピンについて他国の状況も調査し発信しています。ベンゾ問題は薬の問題というよりも減薬の困難性と正しい処方についての医療界の無知が問題。服薬中でも“いきなりやめないで”" 
+            image="/twitterimg/icon-144x144.png" 
+            lang="ja"
+      />
       <Container fluid="md">
       <h1 style={{fontSize: `1.25rem`}}>管理人プロフィール</h1>
         <p>

@@ -51,9 +51,9 @@ const WithdrawalSymptoms = () => (
                     </>
                 )}
             />
-                参考記事：
-            <div><FontAwesomeIcon icon={faBook} /> アシュトンマニュアル</div>
-            <div><FontAwesomeIcon icon={faBook} /> <Link to="doctors-article/11">Treatment of Benzodiazepine Dependence</Link></div>
+                参考論文・記事：
+            <div><FontAwesomeIcon icon={faBook} /> <a href="https://pubmed.ncbi.nlm.nih.gov/6143582/" target="_blank" rel="noreferrer noopener">Benzodiazepine withdrawal: An unfinished story</a></div>
+            <div><FontAwesomeIcon icon={faBook} /> <Link to="doctors-article/24">論文：Protracted Withdrawal Syndromes From Benzodiazepines</Link></div>
             <div><FontAwesomeIcon icon={faBook} /> <a href="https://www.ncbi.nlm.nih.gov/pubmed/31034071" target="_blank" rel="noreferrer noopener">Complicated Withdrawal Phenomena During Benzodiazepine Cessation in Older Adults</a></div>
             <div><FontAwesomeIcon icon={faUser} /> <Link to="doctors-article/3">カサンドラの遺書「メディカルメッセージ」</Link></div>
             <div><FontAwesomeIcon icon={faBold} /> <a href="http://benzobuddies.org/forum/index.php" target="_blank" rel="noreferrer noopener">ベンゾバディ</a></div>

@@ -30,6 +30,10 @@
   .fontBrown {
       color: saddlebrown;
   }
-   .divLineSpace   {
+  .divLineSpace   {
     margin-top:  20;
+  }
+  .liDeco {
+    font-size: 1.024rem;
+    color: indianred;
   }
