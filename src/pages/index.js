@@ -83,26 +83,29 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>動画紹介</h2>
               <div>
-                <Badge variant="danger">新</Badge>
-                {` `}
-                <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/7ul9kCDTUCw" alt="ジョーダン・ピーターソン" target="_blank" rel="noreferrer noopener">臨床心理学者ジョーダン・ピーターソン：自身のベンゾジアゼピン離脱を語る 8分</a>
-                <br />
-                <span className={Style.fontSmall}>出典：<a href="https://youtu.be/HLWgVpmo1e0" target="_blank" rel="noreferrer noopener">The Mikhaila Peterson Podcast #9</a>   
-                <br />
-                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
-              </div>
-              <br />
-              <div>
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （前半）22分</a>
                 <br />
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/X4VwnA3qsas" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （後半）19分</a>
                 <br />
-                <span className={Style.fontSmall}>This Is Life with Lisa Ling 2019年10月6日放映</span>
+                <span className={Style.fontSmall}>2019年10月6日CNNにて放映</span>
+                {/* 
                 <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
+                <br />
                 <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>   
+                <br />
+                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
+                */}
+              </div>
+              <br />
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士インタビュー" target="_blank" rel="noreferrer noopener">臨床薬理学者ジム・ライト博士インタビュー 32分</a>
+                {` `}<Badge variant="danger">新</Badge>
+                <br />
+                <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士インタビュー" target="_blank" rel="noreferrer noopener"><Image filename="home_03.jpg" alt="臨床薬理学者ジム・ライト博士インタビュー" /></a>
+                <span className={Style.fontSmall}>出典：<a href="https://youtu.be/mjRaoplOwUc" target="_blank" rel="noreferrer noopener">Dr. Jim Wright Interview for W-BAD 2020</a>   
                 <br />
                 字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
@@ -111,7 +114,7 @@ const IndexPage = ({ data }) => (
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン『医療災害』</a>
                 <br />
-                <span className={Style.fontSmall}>The Benzodiazepine Medical Disaster 2017年1月放映</span>
+                <span className={Style.fontSmall}>2017年1月アイルランド国営放送にて放映</span>
                 <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener"><Image filename="home_04.jpg" alt="ベンゾジアゼピン『医療災害』" /></a>
                 <span className={Style.fontSmall}>
                 出典：アイルランド放送協会 RTE 1 TV
@@ -125,12 +128,16 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>その他の動画紹介</h2>
               <div>
-                  <FontAwesomeIcon icon={faVideo} />
-                  <a href="https://youtu.be/JZN5n4HBrcc" alt="ベンゾ被害者の声" target="_blank" rel="noreferrer noopener">"ベンゾ被害者の声" 9分</a>
+              <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/7ul9kCDTUCw" alt="ジョーダン・ピーターソン" target="_blank" rel="noreferrer noopener">臨床心理学者ジョーダン・ピーターソン：自身のベンゾジアゼピン離脱体験を語る 8分</a>
               </div>
               <div>
                   <FontAwesomeIcon icon={faVideo} />
                   <a href="https://youtu.be/c9W_3Qud8Ds" alt="ベンゾジアゼピン離脱の困難性" target="_blank" rel="noreferrer noopener">"スタンフォード大学精神科医 アナ・ランプキー教授インタビュー" 4分</a>
+              </div>
+              <div>
+                  <FontAwesomeIcon icon={faVideo} />
+                  <a href="https://youtu.be/JZN5n4HBrcc" alt="ベンゾ被害者の声" target="_blank" rel="noreferrer noopener">"ベンゾ被害者の声" 9分</a>
               </div>
             </Col>
           </Row>
