@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
 
 import { useLocation } from "@reach/router"
-import { DiscussionEmbed } from "disqus-react";
-import { FacebookProvider, Comments } from 'react-facebook';
+//import { DiscussionEmbed } from "disqus-react";
+//import { FacebookProvider, Comments } from 'react-facebook';
 //import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard';
 //import ItemList from '../components/Comment'
 
@@ -20,12 +20,14 @@ const Articlearticle = props => {
  //console.log('◆article.writer.name ' + article.writer.name)
 
  /* コメント欄機能Disqusの設定 */
+ /*
  const slug = useLocation()
  const title = article.title
  const disqusShortname = "bij-site-2";
  const disqusConfig = {
   config: { identifier: slug, title },
 }
+*/
 
 
  const categoryName = article.category[0].name // パンくずで使う上位ページの分類名
@@ -100,8 +102,10 @@ const Articlearticle = props => {
        ></div>
      </div>
      <br /><br />
+     {/*
      <FontAwesomeIcon icon={faEdit} /><span style={{color:`#5a818c`}}>ご自由にコメントをお書きください。管理人の承認作業はありません。</span>
      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+     */}
      {/* <FacebookProvider appId="712789275930386" language="ja_JP">
         <Comments href="http://benzoinfojapan.org" width="100%" />
       </FacebookProvider>
