@@ -15,7 +15,7 @@ import { faVideo } from '@fortawesome/free-solid-svg-icons'
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="ベンゾジアゼピン情報センター トップページ"
-        description="睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こします" 
+        description="睡眠薬、抗不安薬であるベンゾジアゼピンは決められた処方用量を守っていてもベンゾジアゼピン離脱の際に重篤な離脱症状を発生する場合があります" 
         image="/twitterimg/icon-144x144.png" 
         lang="ja"
     />
@@ -53,8 +53,8 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
                   <div>
-                    <Link to="/medias-article/11" alt="管理人の経験したベンゾ離脱症状">
-                    管理人の経験したベンゾ離脱症状
+                    <Link to="/patients-article/9" alt="ドライカット（細粉法）での減薬方法">
+                    ドライカット（細粉法）での減薬方法
                     </Link>
                       を更新しました
                     <Badge variant="info">更</Badge>
@@ -82,6 +82,7 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>動画紹介</h2>
+              {/* 
               <div>
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （前半）22分</a>
@@ -90,15 +91,16 @@ const IndexPage = ({ data }) => (
                 <a href="https://youtu.be/X4VwnA3qsas" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （後半）19分</a>
                 <br />
                 <span className={Style.fontSmall}>2019年10月6日CNNにて放映</span>
-                {/* 
+                
                 <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
                 <br />
                 <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>   
                 <br />
                 字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
-                */}
+                
               </div>
               <br />
+              */}
               <div>
                 <FontAwesomeIcon icon={faVideo} />
                 <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士インタビュー" target="_blank" rel="noreferrer noopener">臨床薬理学者ジム・ライト博士インタビュー 32分</a>
