@@ -53,20 +53,18 @@ const IndexPage = ({ data }) => (
             <Col>
               <h2 className={Style.h2Size}>更新情報</h2>
                   <div>
-                    <Link to="/patients-article/9" alt="ドライカット（細粉法）での減薬方法">
-                    ドライカット（細粉法）での減薬方法
+                    <Link to="/patients-article/8" alt="管理人のベンゾ減薬記録">
+                    管理人のベンゾ減薬記録
                     </Link>
                       を更新しました
                     <Badge variant="info">更</Badge>
                   </div>
                   <div>
-                    {/* 
                     <Link to="/patients-article/10" alt="My taper log and history">
                     My taper log and history
                     </Link>
                     {` `}is updated
                     <Badge variant="info">更</Badge>
-                    */}
                   </div>
             </Col>
           </Row>
