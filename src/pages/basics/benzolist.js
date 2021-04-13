@@ -7,7 +7,9 @@ import SEO from "../../components/seo"
 
 import { Container, Table } from 'react-bootstrap'
 import Styles from './benzolist.module.css'
-  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
+
   const BenzoList = () => (
     <Layout>
       <Container fluid="md">
@@ -16,6 +18,17 @@ import Styles from './benzolist.module.css'
         image="/twitterimg/pict_benzolisteng.png" 
         lang="ja"
         />
+
+        <div className={Styles.banner}>
+          <p>
+            <FontAwesomeIcon icon={faEdit} style={{color: `darkolivegreen` }} />
+            <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
+              『ベンゾジアゼピン薬の安全な離脱方法』（Kindle版）
+            </a>
+            発売中
+          </p>
+        </div>
+
         <h1 className={Styles.h1Size}>ベンゾ一覧 - ジアゼパム換算表<br /><small class="text-muted">抗不安薬・睡眠薬等価換算表</small></h1>
         ※ 日本では34種類のベンゾジアゼピン系薬剤が処方可能となっている（米国では5種類）。 そのため自分がベンゾを飲んでいるのかわかりにくい場合が多いと思います。 ぜひ自分の常用薬をチェックしてみてください。一般名となっているのがジェネリック名と同じです。
         <Table striped bordered hover size="sm" responsive>

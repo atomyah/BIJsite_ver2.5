@@ -3,9 +3,10 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Row, Col, Breadcrumb} from 'react-bootstrap'
+import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit } from '@fortawesome/free-solid-svg-icons'
+import Style from './article.module.css'
 
 import { useLocation } from "@reach/router"
 //import { DiscussionEmbed } from "disqus-react";
@@ -54,6 +55,17 @@ const Articlearticle = props => {
         image={article.pict.url}  
         lang="ja"
     />
+
+        <div className={Style.banner}>
+          <p>
+            <FontAwesomeIcon icon={faEdit} style={{color: `darkolivegreen` }} />
+            <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
+              『ベンゾジアゼピン薬の安全な離脱方法』（Kindle版）
+            </a>
+            発売中
+          </p>
+        </div>
+
         <Breadcrumb style={{fontSize: `0.65rem`, backgroundColor: `white`}}>
           <Breadcrumb.Item href="/">ホーム</Breadcrumb.Item>
           <Breadcrumb.Item href={`/${categoryName}`}>

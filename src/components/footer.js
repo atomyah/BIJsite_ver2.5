@@ -6,6 +6,7 @@ import { faTwitter } from '@fortawesome/free-solid-svg-icons'
 
 import Twitter_Logo_Blue from '../images/Twitter_Logo_Blue.svg'
 import Facebook_Logo from '../images/facebook-6.svg'
+import YouTube_Logo from '../images/youtube-logo.svg'
 
 const Footer = () => (
     <>
@@ -42,9 +43,9 @@ const Footer = () => (
             </Nav.Item>
             <Nav.Item>
               <div className="box">
-                <a href="https://www.facebook.com/benzoinfo" target="_blank" rel="noreferrer noopener">
-                  Facebook{` `}
-                  <img src={Facebook_Logo} width={14} alt={'Facebook'} />          
+                <a href="https://www.youtube.com/channel/UCkZs4B_mj2ffOLFWO2TrAbg" target="_blank" rel="noreferrer noopener">
+                  YouTube{` `}
+                  <img src={YouTube_Logo} width={32} alt={'YouTube'} />          
                 </a>
                 {`　`}          
               </div>

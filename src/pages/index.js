@@ -26,6 +26,25 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>新着情報</h2>
+                <Row>
+                  <Col>
+                    <Badge variant="danger">新</Badge>
+                    <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
+                      『ベンゾジアゼピン薬の安全な離脱方法』（Kindle電子書籍）
+                    </a>
+                    <span className={Style.fontSmall}>を上梓しました。</span>
+                    <br />
+                    <span className={Style.fontSmall}>
+                    患者のみなさま、ご家族、そして医師や薬剤師など医療専門家の方々も読者対象にしております。
+                    </span>
+                  </Col>
+                  <Col>
+                    <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
+                      <img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=B0925VD9W1&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=kokkahasan-22" />
+                    </a>
+                  </Col> 
+                </Row>
+                <br />
               {data.allMicrocmsArticles.edges.map(edge => {
                 const articles = edge.node
                 const category = edge.node.category[0].name

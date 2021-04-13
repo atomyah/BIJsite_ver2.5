@@ -9,7 +9,7 @@ import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
 import Style from './introduction.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab) // FontAwesomeのライブラリ読み込み
@@ -22,6 +22,17 @@ const IntroductionPage = () => (
         lang="ja"
     />
     <Container fluid="md">
+
+        <div className={Style.banner}>
+          <p>
+            <FontAwesomeIcon icon={faEdit} style={{color: `darkolivegreen` }} />
+            <a href="https://www.amazon.co.jp/gp/product/B0925VD9W1/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B0925VD9W1&linkCode=as2&tag=kokkahasan-22&linkId=94f04c0b99835aaa944655bc2d852dda" target="blank" rel="noreferrer noopener">
+              『ベンゾジアゼピン薬の安全な離脱方法』（Kindle版）
+            </a>
+            発売中
+          </p>
+        </div>
+
     <h1 className={Style.h1Size}>ベンゾジアゼピン（睡眠薬・抗不安薬）概要</h1> 
         <Jumbotron>
         飲んでいませんか…？ ソラナックス、デバス、レンドルミン、サイレース、ロヒプノール、リスミー、メイラックス、レキソタン、ユーロジン、エバミール、フルニトラゼパム、アルプラゾラム、ロラゼパム、プロチゾラム、ロフラゼプ酸、エチゾラム、ランドセン、リボトリールetc...
@@ -39,7 +50,7 @@ const IntroductionPage = () => (
       したがって日本以外のアジア各国では認識さえされていません。
       香港はベンゾの危険性を知るドクターはまったくいない（0 doctor）と現地の被害者から情報が入っています。
       さらに最新のINCBレポートを見ると、ここ数年でインドでの数値が激増しています。
-      S-DDD値（後述）はまだ一桁ですが総人口がアレですから総服用者数は日本を超えたかもしれません。
+      S-DDD値（後述）はまだ一桁ですが総人口が巨大ですから総服用者数は日本を超えたかもしれません。
       日本の対応の遅さを嘆く訴えが多いですが、残念ながらベンゾ問題は日本が突出してひどいわけでなく世界中の問題であるといえます。
       本サイトではおそらく2千万人～3千万人のベンゾ服用者がいる最大消費国の米国の状況を中心に正しい情報をお伝えします。
       そのわけは世界最大のベンゾオンラインフォーラムが米国にあり、また医学論文など英語での情報量が傑出しているからです。</p>
@@ -80,7 +91,7 @@ const IntroductionPage = () => (
         ウィキペディアを覗くとどちらも厳正な規制があるような記述がありますが、実際はまったく強制力のない勧告で、それもまるで活かされていないということです。
       </p>
       <p>
-        最後にアジアです。INCBのデータに入ってこない台湾・香港では５～６人にひとりが服用しているのではないかとも言われています。特に台湾はアジア最悪と国内の被害者のあいだでは絶望視されているようで、
+        最後にアジアです。INCBのデータに入ってこない台湾では５～６人にひとりが服用しているのではないかとも言われています。特に台湾はアジア最悪と国内の被害者のあいだでは絶望視されているようで、
         情報もほとんどなく（アシュトンマニュアル中文版などありません）ごくほんのわずかな外国語ができる被害者が本サイトをはじめ日本語、英語サイトを頼りにしているようです。<br />
         <span className={Style.fontBlue}>その台湾ですが、Twitterのフォロワーさんの情報により具体的な数字がわかりました。<br />
         <strong>人口2300万人中、睡眠薬服用者は426万人</strong>とのことです。10人に1人が不眠症で悩んでおり<strong>5人に1人が睡眠薬を服薬している</strong>とのこと。台湾国立薬剤師連盟によるデータです。
