@@ -99,32 +99,14 @@ const IndexPage = ({ data }) => (
           <Row>
             <Col>
               <h2 className={Style.h2Size}>動画紹介</h2>
-              {/* 
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （前半）22分</a>
+                <a href="https://youtu.be/7rNMaxJDRqM" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
                 <br />
-                <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/X4VwnA3qsas" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （後半）19分</a>
+                クリシーの場合 vol.01 ~ 04</a><span className={Style.fontBlue}> (クリシーは液体タイトレーションによりリボトリールから離脱完了しています)</span>
                 <br />
-                <span className={Style.fontSmall}>2019年10月6日CNNにて放映</span>
-                
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
-                <br />
-                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>   
-                <br />
-                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
-                
-              </div>
-              <br />
-              */}
-              <div>
-                <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士インタビュー" target="_blank" rel="noreferrer noopener">臨床薬理学者ジム・ライト博士インタビュー 32分</a>
-                {` `}<Badge variant="danger">新</Badge>
-                <br />
-                <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士インタビュー" target="_blank" rel="noreferrer noopener"><Image filename="home_03.jpg" alt="臨床薬理学者ジム・ライト博士インタビュー" /></a>
-                <span className={Style.fontSmall}>出典：<a href="https://youtu.be/mjRaoplOwUc" target="_blank" rel="noreferrer noopener">Dr. Jim Wright Interview for W-BAD 2020</a>   
+                <a href="https://youtu.be/7rNMaxJDRqM" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.png" alt="臨床薬理学者ジム・ライト博士インタビュー" /></a>
+                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/profiles/lisa-ling-profile" target="_blank" rel="noreferrer noopener">CNN, A Warner Media Company</a>   
                 <br />
                 字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
@@ -165,23 +147,25 @@ const IndexPage = ({ data }) => (
       <div className={Style.divLineSpace}></div>
 
             <h2 className={Style.h2Size}>はじめに</h2>
-              睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こすことがあります。日本だけでなく世界中で蔓延処方され約10人にひとりが服用し
-            <Link to="/doctors-article/11" alt="Treatment of Benzodiazepine Dependence" target="_blank" rel="noreferrer noopener">1ヶ月連用で約半数が身体依存形成されます</Link>。短期間の減薬では離脱症状が拷問と言っていいほどの苦痛で
-            最悪自死に至ります。何年服薬していても離脱症状がまったく無い、もしくは軽度で簡単にやめられる方はたくさんいます。しかしそれを前もって知る方法はありません。
-            運悪くご自分がそうでない場合は必ず、<br />
-            <br />１．<Link to="/patients-article/8">減薬は数年</Link>かけてください！
-            <br />２．服薬中でも不安になる必要はまったくありません。いきなりやめないように！<br /> 
-            <br /> アルコール依存症や薬物依存とは同じ“依存”という言葉を使用するもののそれらとは異質なものです。
-            ベンゾ依存は<span className={Style.fontCrimson}>依存症ではなく「薬物性神経機能傷害」</span>と言えます。
-            英語ですと<strong>addiction</strong>（アディクション・精神依存・嗜癖）ではなく<strong>dependency</strong>（身体依存）, <strong>injury</strong>（傷害）です。
-            <span className={Style.fontGray}>(<a href="http://www.stuartshipko.com/" target="_blank" rel="noreferrer noopener">スチュアート・シプコ博士</a>による提言：『医療界は遷延性離脱症状のような事態を想定しておらず、
-            通常は離脱(Withdrawal)というと数週間で消えていくものと思われてしまう。私は<span className={Style.fontCrimson}>薬物神経毒性症状＜drug neurotoxicity＞</span>と呼んでいる』）</span>
+            ベンゾジゼアピン薬とは主に不眠や不安に処方される睡眠薬・抗不安薬のことです。<span className={Style.fontCrimson}>日本では約700万人が服用</span>し続けており、
+            処方用量を守って飲み続けても重篤な依存性を引き起こす場合があります。
+            その状態で一気中止／急減薬すると離脱症状が拷問と言っていいほどの苦痛になり、<a href="https://youtu.be/CHv7xnhbSyg" alt="ベンゾ被害者の声" target="_blank" rel="noreferrer noopener">最悪自死に至る</a>こともあります。
+            何年服薬していても離脱症状がまったく無いか、あるいは軽度で簡単にやめられる方はたくさんいます。
+            しかし<span className={Style.fontCrimson}>重度依存状態かそうでないかを前もって知る方法はありません</span>。
+            したがって、<br />
+            <br />１．まず、服薬中でも不安になる必要はまったくありません。<strong>いきなりやめないように！</strong>必要ならそのまま飲み続けて下さい
+            <br />２．離脱症状を発症した場合は、減薬を一時停止するかベンゾジアゼピンを以前の投与量に上げ、容態が安定してから徐々に減薬してください
+            （<Link to="/doctors-article/23">『米FDA ー ベンゾジアゼピン薬のブラックボックス警告更新要請』</Link>）
+            <br /> 
+            <h2 className={Style.h2Size}>ベンゾジアゼピン依存について</h2>
+            ベンゾ依存はアルコール依存症や薬物依存症と異なり<span className={Style.fontCrimson}>「薬物性神経機能傷害」</span>と言えます。
+            英語ですと<strong>addiction</strong>（アディクション・精神依存）ではなく<strong>physical dependence</strong>（身体依存）であり、米FDAは<strong>injury</strong>（傷害）としています
+            （<a href="https://www.benzoinfo.com/wp-content/uploads/2020/11/Benzodiazepine-Information-Coalition-FOIA-FDA-.pdf" target="_blank" rel="noreferrer noopener">『ベンゾジアゼピン長期使用に関する疫学研究レビュー』</a>）。
             <br />
-            しかしベンゾジアゼピン系薬剤は半世紀前から様々な症状に対して気軽に処方されつづけ、医療界ではその安全な離脱方法について無知であり続けました。
-            より詳しくは<Link to="introduction">ベンゾジアゼピン概略</Link>のページをご覧ください。
+            しかしベンゾジアゼピン系薬剤はそのオールマイティな効能もあり、半世紀にわたり<Link to="introduction">不眠や不安だけでなく
+            肩こりや胃痛など様々な身体症状に対して気軽に処方され</Link>つづけ、医療界ではその安全な離脱方法について無知であり続けました。つまり、精神医療に限った話ではありません。
             <br />
-            <br />このサイトはわたしの実体験と米国NPO団体<a href="https://www.benzoinfo.com">Benzodiazepine Information Coallition</a>の記事および<a href="http://www.benzobuddies.org/forum/index.php">ベンゾバディ</a>という世界最大の
-              ベンゾ情報フォーラムの投稿を中心に情報提供を目的に作成しました。引用・転載フリーです。必ず「出典：<a href="https://benzoinfojapan.org">ベンゾ情報センター</a>」を追記してください（BICの記事には著作権があります。許可をいただいて翻訳しています）。
+            <br />このサイトの記事について引用・転載フリーです。必ず「出典：<a href="https://benzoinfojapan.org">ベンゾ情報センター</a>」を追記してください。
 
       <div className={Style.divLineSpace}></div>
 
