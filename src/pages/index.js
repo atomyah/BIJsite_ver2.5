@@ -153,8 +153,8 @@ const IndexPage = ({ data }) => (
             何年服薬していても離脱症状がまったく無いか、あるいは軽度で簡単にやめられる方はたくさんいます。
             しかし<span className={Style.fontCrimson}>重度依存状態かそうでないかを前もって知る方法はありません</span>。
             したがって、<br />
-            <br />１．まず、服薬中でも不安になる必要はまったくありません。<strong>いきなりやめないように！</strong>必要ならそのまま飲み続けて下さい
-            <br />２．離脱症状を発症した場合は、減薬を一時停止するかベンゾジアゼピンを以前の投与量に上げ、容態が安定してから徐々に減薬してください
+            <br />１．まず、服薬中でも不安になる必要はまったくありません。<strong>いきなりやめないように！</strong>必要なら主治医の処方に従いそのまま服薬を継続してください
+            <br />２．減薬するにあたり離脱症状を発症した場合は、減薬を一時停止するかあるいはベンゾジアゼピンを以前の投与量に上げ、容態が安定してから徐々に減薬してください
             （<Link to="/doctors-article/23">『米FDA ー ベンゾジアゼピン薬のブラックボックス警告更新要請』</Link>）
             <br /> 
             <h2 className={Style.h2Size}>ベンゾジアゼピン依存について</h2>
@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => (
             英語ですと<strong>addiction</strong>（アディクション・精神依存）ではなく<strong>physical dependence</strong>（身体依存）であり、米FDAは<strong>injury</strong>（傷害）としています
             （<a href="https://www.benzoinfo.com/wp-content/uploads/2020/11/Benzodiazepine-Information-Coalition-FOIA-FDA-.pdf" target="_blank" rel="noreferrer noopener">『ベンゾジアゼピン長期使用に関する疫学研究レビュー』</a>）。
             <br />
-            しかしベンゾジアゼピン系薬剤はそのオールマイティな効能もあり、半世紀にわたり<Link to="introduction">不眠や不安だけでなく
+            しかしベンゾジアゼピン薬はそのオールマイティな効能もあり、半世紀にわたり<Link to="introduction">不眠や不安だけでなく
             肩こりや胃痛など様々な身体症状に対して気軽に処方され</Link>つづけ、医療界ではその安全な離脱方法について無知であり続けました。つまり、精神医療に限った話ではありません。
             <br />
             <br />このサイトの記事について引用・転載フリーです。必ず「出典：<a href="https://benzoinfojapan.org">ベンゾ情報センター</a>」を追記してください。
