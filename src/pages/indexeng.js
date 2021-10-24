@@ -19,7 +19,7 @@ const IndexPageEng = () => (
           lang="ja"
       />
       <Container fluid="md">
-      <h1 className={Style.h1Size}>Benzodiazepine Information Center - Japan</h1> 
+      <h1 className={Style.h1Size}>Benzodiazepine Information Center Japan</h1> 
       <Row>
         <Col md={6}>
           <Row>
@@ -28,14 +28,22 @@ const IndexPageEng = () => (
                 {/* <Badge variant="danger">新</Badge> */}
               <div>
                 <Link to="/patients-article/10" alt="benzo tapering log">
-                  Updated the article "my tapering log"
+                  "my tapering log - flunitrazepam, diazepam"
                 </Link>
                 <Badge variant="info">update</Badge>
               </div>
+              <div>
+                <Link to="/medias-article/12" alt="benzo tapering log">
+                  "My Benzodiazepine Withdrawal Symptoms *[<span className={Style.fontSmallCrimson}>trigger warning</span>]"
+                </Link>
+                <Badge variant="danger">new</Badge>
+              </div>
               <br />
               <div>
+                {/* 
               Site renewal! - comments field added to the pages
                 <Badge variant="danger">new</Badge>
+                */}
               </div>
             
             </Col>
@@ -44,7 +52,9 @@ const IndexPageEng = () => (
             <Col>
               <h2 className={Style.h2Size}>Link to pages</h2>
               <Link to="/patients-article/10" alt="my tapering log">
-                my tapering log
+                my tapering log - flunitrazepam, diazepam
+                <br />
+                <Image filename="flunitrazepam_tapering.png" alt="my taper log - flunitrazepam, diazepam" />
               </Link>
               <br />
               <Link to="/introductioneng" alt="Summary of Benzodiazepine">
@@ -67,31 +77,27 @@ const IndexPageEng = () => (
               <h2 className={Style.h2Size}>movies</h2>
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="This Is Lif with Lisa Ling" target="_blank" rel="noreferrer noopener">This Is Lif with Lisa Ling （前半）22分</a>
+                <a href="https://youtu.be/0lsbiczKfJY" alt="Benzodiazepine - Medical Disaster" target="_blank" rel="noreferrer noopener">Benzodiazepine - Medical Disaster</a>
                 <br />
-                <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/X4VwnA3qsas" alt="This Is Lif with Lisa Ling" target="_blank" rel="noreferrer noopener">This Is Lif with Lisa Ling （後半）19分</a>
+                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener"><Image filename="home_04.jpg" alt="ベンゾジアゼピン『医療災害』" /></a>
                 <br />
-                <span className={Style.fontSmall}>This Is Life with Lisa Ling 2019年10月6日放映</span>
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="This Is Lif with Lisa Ling" target="_blank" rel="noreferrer noopener"><Image filename="home_03.png" alt="This Is Lif with Lisa Ling" /></a>
+                <span className={Style.fontSmall}>produce：RTÉ Television / Shane Kenny
                 <br />
-                <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>      
-                <br />
-                sub title：<a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">benzodiazepine information center - @benzoinfojapan</a></span>
+                subtitle：健康生活研究会有志　subtitle supervision: <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Center Japan</a></span>
               </div>
             </Col>
           </Row>
           <Row>
             <Col>
               <h2 className={Style.h2Size}>other movies</h2>
-              <div>
+                <div>
                   <FontAwesomeIcon icon={faVideo} />
                   <a href="https://youtu.be/JZN5n4HBrcc" alt="many faces benzo" target="_blank" rel="noreferrer noopener">"many faces benzo" 9分</a>
-              </div>
-              <div>
+                </div>
+                <div>
                   <FontAwesomeIcon icon={faVideo} />
                   <a href="https://youtu.be/c9W_3Qud8Ds" alt="Benzodiazepine Withdrawal Difficulties: Stanford Psychiatrist Anna Lembke, M.D." target="_blank" rel="noreferrer noopener">"Benzodiazepine Withdrawal Difficulties: Stanford Psychiatrist Anna Lembke, M.D." 4分</a>
-              </div>
+                </div>
             </Col>
           </Row>
         </Col>

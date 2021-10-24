@@ -20,7 +20,18 @@ const IndexPage = ({ data }) => (
         lang="ja"
     />
     <Container fluid="md">
-    <h1 className={Style.h1Size}>ベンゾジアゼピン（睡眠薬・抗不安薬）情報センター</h1> 
+      <Row>
+        <Col>
+          <h1 className={Style.h1Size}>ベンゾジアゼピン（睡眠薬・抗不安薬）情報センター</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Link to="/indexeng" alt="benzoinfojapan">
+            Benzodiazepine Information Center - Japan (english page)
+          </Link>
+        </Col>
+      </Row>
       <Row>
         <Col md={6}>
           <Row>
@@ -101,9 +112,37 @@ const IndexPage = ({ data }) => (
               <h2 className={Style.h2Size}>動画紹介</h2>
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/7rNMaxJDRqM" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
+                  <a href="https://youtu.be/7ul9kCDTUCw" alt="臨床心理学者ジョーダン・ピーターソンのベンゾ離脱体験" target="_blank" rel="noreferrer noopener">
+                    臨床心理学者ジョーダン・ピーターソンのベンゾ離脱体験（8分）
+                  </a>
                 <br />
-                クリシーの場合 vol.01 ~ 04</a><span className={Style.fontBlue}> (クリシーは液体タイトレーションによりリボトリールから離脱完了しています)</span>
+                <span className={Style.fontSmall}>2020年2月撮影</span>
+                <a href="https://youtu.be/7ul9kCDTUCw" alt="臨床心理学者ジョーダン・ピーターソンのベンゾ離脱体験" target="_blank" rel="noreferrer noopener"><Image filename="home_01.png" alt="ジョーダン・ピーターソン博士" /></a>
+                <span className={Style.fontSmall}>
+                出典：The Mikhaila Peterson Podcast #9
+                <br />
+                字幕制作：ベンゾジアゼピン情報センター
+                </span>             
+              </div>
+              <br />
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
+                  <a href="https://youtu.be/0wyY1ImfmRI" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">
+                  「リサ・リンのこれが人生－ベンゾクライシス」出演のクリシー・ティレル氏のベンゾジアゼピン離脱体験（11分）
+                  </a>
+                <br />
+                <a href="https://youtu.be/0wyY1ImfmRI" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_05.png" alt="リサ・リンのこれが人生－ベンゾクライシス" /></a>
+                <span className={Style.fontSmall}>出典：<a href="https://benzoinfo.com" target="_blank" rel="noreferrer noopener">Benzodiazepine Information Coalition</a>   
+                <br />
+                字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
+              </div>
+              <br />
+              <div>
+                <FontAwesomeIcon icon={faVideo} />
+                <a href="https://youtu.be/7rNMaxJDRqM" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生－ベンゾクライシス
+                  <br />
+                クリシーの場合 vol.01 ~ 04（2分～3分）
+                </a>
                 <br />
                 <a href="https://youtu.be/7rNMaxJDRqM" alt="リサ・リンのこれが人生－ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.png" alt="臨床薬理学者ジム・ライト博士インタビュー" /></a>
                 <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/profiles/lisa-ling-profile" target="_blank" rel="noreferrer noopener">CNN, A Warner Media Company</a>   
@@ -111,18 +150,22 @@ const IndexPage = ({ data }) => (
                 字幕・翻訳：<a href="https://benzoinfojapan.org/profile/" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター</a></span>
               </div>
               <br />
+              {/* 
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン『医療災害』</a>
+                  <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener">
+                    ベンゾジアゼピン『医療災害』（52分）
+                  </a>
                 <br />
                 <span className={Style.fontSmall}>2017年1月アイルランド国営放送にて放映</span>
-                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener"><Image filename="home_04.jpg" alt="ベンゾジアゼピン『医療災害』" /></a>
+                <a href="https://youtu.be/0lsbiczKfJY" alt="ベンゾジアゼピン『医療災害』" target="_blank" rel="noreferrer noopener"><Image filename="home_04.png" alt="ベンゾジアゼピン『医療災害』" /></a>
                 <span className={Style.fontSmall}>
                 出典：アイルランド放送協会 RTE 1 TV
                 <br />
                 字幕制作：健康生活研究会有志　監修協力：ベンゾジアゼピン情報センター
                 </span>             
               </div>
+              */}
             </Col>
           </Row>
           <Row>
@@ -130,7 +173,7 @@ const IndexPage = ({ data }) => (
               <h2 className={Style.h2Size}>その他の動画紹介</h2>
               <div>
               <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/7ul9kCDTUCw" alt="ジョーダン・ピーターソン" target="_blank" rel="noreferrer noopener">臨床心理学者ジョーダン・ピーターソン：自身のベンゾジアゼピン離脱体験を語る 8分</a>
+                <a href="https://youtu.be/Xk06U78svGI" alt="臨床薬理学者ジム・ライト博士" target="_blank" rel="noreferrer noopener">臨床薬理学者ジム・ライト博士インタビュー 32分</a>
               </div>
               <div>
                   <FontAwesomeIcon icon={faVideo} />
